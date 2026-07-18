@@ -16,7 +16,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* Padding 45px kar di hai taaki vertical gap kam ho jaye aur elements thoda uper shift hon */
   padding: 45px 10%; 
   max-width: 1200px;
   margin: 0 auto;
@@ -112,7 +111,7 @@ body {
 
 .feature-text {
   flex: 1;
-  max-width: 450px;
+  max-width: 500px; /* Text box thoda choda kiya taaki single/double line mein aaye */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -120,17 +119,19 @@ body {
 }
 
 .feature-text h2 {
-  font-size: 19px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 600;
   letter-spacing: 4px;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   color: #1a1a1a;
 }
 
+/* Exact Original Pic Style Text: Light gray, proper spacing, clean lines */
 .feature-text p {
-  font-size: 15px;
-  line-height: 1.8;
-  color: #777777;
+  font-size: 16px; 
+  font-weight: 300; /* Light weight jaise pic mein hai */
+  line-height: 1.6;
+  color: #8c8c8c; /* Premium light gray color */
 }
 
 /* Background Soft Waves Effect */
@@ -209,4 +210,3 @@ body {
     max-width: 340px;
   }
 }
-
