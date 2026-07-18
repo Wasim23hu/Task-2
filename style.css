@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  color: #2b2b2b;
+  color: #6b6b6b; /* Premium soft gray text color */
   overflow-x: hidden;
   background: #ffffff;
 }
@@ -16,159 +16,183 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  background: #e9e9e9;
-  padding: 70px 8% 120px;
-  gap: 40px;
+  background: #ffffff; /* Pure white background */
+  padding: 100px 10% 80px;
+  gap: 50px;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .hero-text {
-  max-width: 460px;
+  max-width: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
 }
 
 .logo {
-  width: 220px;
-  margin-bottom: 18px;
+  width: 250px;
+  margin-bottom: 24px;
 }
 
 .hero-text h1 {
-  font-size: 28px;
-  font-weight: 800;
+  font-size: 20px;
+  font-weight: 700;
   letter-spacing: 2px;
-  line-height: 1.3;
+  line-height: 1.4;
   color: #1a1a1a;
+  margin-bottom: 10px;
 }
 
 .hero-text p {
-  margin-top: 8px;
-  font-size: 14px;
-  letter-spacing: 1px;
-  color: #6b6b6b;
+  font-size: 15px;
+  color: #8a8a8a;
+  letter-spacing: 0.5px;
 }
 
 .store-row {
   display: flex;
-  gap: 14px;
-  margin-top: 28px;
-  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 35px;
+  justify-content: center;
 }
 
 .store-row img {
-  height: 44px;
+  height: 48px;
   display: block;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-image img {
-  max-width: 460px;
+  max-width: 550px;
   width: 100%;
   height: auto;
-}
-
-/* ---------- WAVE DIVIDER ---------- */
-.wave {
-  display: block;
-  width: 100%;
-  height: 60px;
-  margin-top: -60px;
 }
 
 /* ---------- FEATURE SECTIONS ---------- */
 .feature {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 80px;
-  flex-wrap: wrap;
-  padding: 60px 8%;
-  max-width: 1200px;
+  padding: 120px 10%;
+  max-width: 1300px;
   margin: 0 auto;
+}
+
+/* Premium smooth light-gray wave gradients matching your design */
+#channels {
+  background: radial-gradient(circle at 100% 0%, #f4f6f8 0%, #ffffff 65%);
+}
+
+#messages {
+  background: radial-gradient(circle at 0% 100%, #f4f6f8 0%, #ffffff 70%);
+}
+
+#future {
+  background: radial-gradient(circle at 50% 50%, #f7f9fa 0%, #ffffff 100%);
 }
 
 .feature.reverse {
   flex-direction: row-reverse;
 }
 
+.feature-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
 .feature-image img {
-  max-width: 340px;
+  max-width: 440px;
   width: 100%;
   height: auto;
 }
 
 .feature-text {
-  max-width: 380px;
-  text-align: center;
+  flex: 1;
+  max-width: 500px;
+  text-align: center; /* 100% Centered text as requested */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .feature-text h2 {
   font-size: 20px;
   font-weight: 700;
-  letter-spacing: 3px;
-  margin-bottom: 16px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
   color: #1a1a1a;
 }
 
 .feature-text p {
-  font-size: 15px;
-  line-height: 1.8;
+  font-size: 16px;
+  line-height: 1.7;
   color: #8a8a8a;
 }
 
 /* ---------- FOOTER ---------- */
 .footer {
-  background: #f2f2f2;
+  background: #ffffff;
   text-align: center;
-  padding: 60px 8% 40px;
+  padding: 100px 8% 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .download-label {
   font-size: 15px;
-  margin-bottom: 20px;
-  color: #2b2b2b;
+  font-weight: 500;
+  color: #1a1a1a;
 }
 
 .footer .store-row {
-  justify-content: center;
-  margin-bottom: 26px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .contact {
   font-size: 13px;
-  color: #6b6b6b;
-  margin-bottom: 30px;
+  color: #8a8a8a;
+  margin-bottom: 35px;
 }
 
 .contact-link {
   color: #2196f3;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .peratude-logo {
-  width: 40px;
-  opacity: 0.8;
+  width: 35px;
+  margin-top: 10px;
 }
 
-/* ---------- RESPONSIVE ---------- */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
+/* ---------- RESPONSIVE DESIGN (Mobile Friendly) ---------- */
+@media (max-width: 850px) {
+  .hero,
+  .feature,
+  .feature.reverse {
+    flex-direction: column !important;
     text-align: center;
-    padding: 50px 6% 100px;
+    gap: 40px;
+    padding: 60px 6%;
   }
 
-  .hero-text {
+  .hero-text, .feature-text {
     max-width: 100%;
   }
 
-  .store-row {
-    justify-content: center;
-  }
-
-  .feature,
-  .feature.reverse {
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-    padding: 40px 6%;
+  .hero-image img, .feature-image img {
+    max-width: 100%;
   }
 }
