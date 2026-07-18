@@ -16,7 +16,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 100px 10%;
+  /* Padding 45px kar di hai taaki vertical gap kam ho jaye aur elements thoda uper shift hon */
+  padding: 45px 10%; 
   max-width: 1200px;
   margin: 0 auto;
   gap: 80px;
@@ -24,8 +25,8 @@ body {
 
 /* ---------- HERO ---------- */
 .hero {
-  padding-top: 80px;
-  padding-bottom: 60px;
+  padding-top: 50px;
+  padding-bottom: 25px;
 }
 
 .hero-text {
@@ -38,7 +39,7 @@ body {
 
 .logo {
   width: 240px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .hero-text h1 {
@@ -54,34 +55,35 @@ body {
   color: #777777;
 }
 
-/* ---------- STORE BUTTONS GLOBAL FIX (TOP & BOTTOM) ---------- */
+/* ---------- STORE BUTTONS FIX ---------- */
 .store-row {
   display: flex;
   gap: 15px;
-  margin-top: 35px;
+  margin-top: 25px;
   justify-content: center;
 }
 
-/* Android Green Button */
-.store-row a:first-child img {
-  background-color: #a4c639; /* Android Premium Green */
-  padding: 6px 14px;
-  border-radius: 8px;
-  height: 46px;
-  object-fit: contain;
+/* Android Green Background */
+.btn-android img {
+  background-color: #a4c639 !important;
+  padding: 6px 14px !important;
+  border-radius: 8px !important;
+  height: 46px !important;
+  display: block !important;
+  object-fit: contain !important;
 }
 
-/* Apple Black Button */
-.store-row a:last-child img {
-  background-color: #000000; /* Pure Black */
-  padding: 6px 14px;
-  border-radius: 8px;
-  height: 46px;
-  object-fit: contain;
+/* Apple Black Background */
+.btn-apple img {
+  background-color: #000000 !important;
+  padding: 6px 14px !important;
+  border-radius: 8px !important;
+  height: 46px !important;
+  display: block !important;
+  object-fit: contain !important;
 }
 
 .store-row img {
-  display: block;
   transition: transform 0.2s;
 }
 
@@ -121,7 +123,7 @@ body {
   font-size: 19px;
   font-weight: 700;
   letter-spacing: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: #1a1a1a;
 }
 
@@ -134,21 +136,25 @@ body {
 /* Background Soft Waves Effect */
 #channels {
   background: linear-gradient(to bottom right, #ffffff 60%, #f4f7f9 100%);
+  padding-bottom: 30px;
 }
 
 #messages {
   background: linear-gradient(to top left, #ffffff 60%, #f4f7f9 100%);
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 #future {
   background: radial-gradient(circle at center, #ffffff 50%, #f6f8fa 100%);
+  padding-top: 30px;
 }
 
 /* ---------- FOOTER ---------- */
 .footer {
   background: #ffffff;
   text-align: center;
-  padding: 100px 10% 50px;
+  padding: 50px 10% 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -162,13 +168,13 @@ body {
 
 .footer .store-row {
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .contact {
   font-size: 13px;
   color: #8a8a8a;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   letter-spacing: 0.5px;
 }
 
@@ -187,8 +193,8 @@ body {
 @media (max-width: 820px) {
   .hero, .feature {
     flex-direction: column !important;
-    padding: 60px 5%;
-    gap: 40px;
+    padding: 35px 5%;
+    gap: 25px;
     text-align: center;
   }
   
@@ -203,3 +209,4 @@ body {
     max-width: 340px;
   }
 }
+
