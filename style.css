@@ -96,7 +96,7 @@ body {
   height: auto;
 }
 
-/* ---------- FEATURE SECTIONS ---------- */
+/* ---------- FEATURE SECTIONS TEXT DESIGN (EXACT MATCH) ---------- */
 .feature-image {
   flex: 1;
   display: flex;
@@ -111,27 +111,29 @@ body {
 
 .feature-text {
   flex: 1;
-  max-width: 500px; /* Text box thoda choda kiya taaki single/double line mein aaye */
+  max-width: 550px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Exact Original Heading Style & Size */
 .feature-text h2 {
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 4px;
-  margin-bottom: 18px;
+  font-size: 24px;         /* Size bada kiya original ki tarah */
+  font-weight: 500;        /* Medium dynamic structural weight */
+  letter-spacing: 6px;     /* Wide premium spacing */
+  margin-bottom: 25px;
   color: #1a1a1a;
+  text-transform: uppercase;
 }
 
-/* Exact Original Pic Style Text: Light gray, proper spacing, clean lines */
+/* Exact Original Paragraph Style, Thinness & Color */
 .feature-text p {
-  font-size: 16px; 
-  font-weight: 300; /* Light weight jaise pic mein hai */
-  line-height: 1.6;
-  color: #8c8c8c; /* Premium light gray color */
+  font-size: 18px;         /* Bada size jaisa image mein hai */
+  font-weight: 300;        /* Super thin light weight modern style */
+  line-height: 1.6;        /* Breathable line height */
+  color: #7c7c7c;          /* Exact elegant soft gray color */
 }
 
 /* Background Soft Waves Effect */
