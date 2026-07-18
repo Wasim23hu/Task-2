@@ -96,7 +96,7 @@ body {
   height: auto;
 }
 
-/* ---------- FEATURE SECTIONS TEXT DESIGN (EXACT MATCH) ---------- */
+/* ---------- FEATURE SECTIONS TEXT DESIGN (GREEN PIC MATCH) ---------- */
 .feature-image {
   flex: 1;
   display: flex;
@@ -111,7 +111,6 @@ body {
 
 .feature-text {
   flex: 1;
-  max-width: 550px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -120,20 +119,22 @@ body {
 
 /* Exact Original Heading Style & Size */
 .feature-text h2 {
-  font-size: 24px;         /* Size bada kiya original ki tarah */
-  font-weight: 500;        /* Medium dynamic structural weight */
-  letter-spacing: 6px;     /* Wide premium spacing */
-  margin-bottom: 25px;
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
   color: #1a1a1a;
   text-transform: uppercase;
 }
 
-/* Exact Original Paragraph Style, Thinness & Color */
+/* Exact Original Length & Style (Green Circle Calibration) */
 .feature-text p {
-  font-size: 18px;         /* Bada size jaisa image mein hai */
-  font-weight: 300;        /* Super thin light weight modern style */
-  line-height: 1.6;        /* Breathable line height */
-  color: #7c7c7c;          /* Exact elegant soft gray color */
+  font-size: 16px;         /* Size accurate kiya */
+  font-weight: 400;        /* Regular sleek style jo clear dikhe */
+  line-height: 1.5;        /* Balanced line gap */
+  color: #727272;          /* Soft grey shade matching the picture */
+  max-width: 320px;        /* Yeh width lagane se text length green pic jaisi squeeze ho jayegi */
+  margin: 0 auto;
 }
 
 /* Background Soft Waves Effect */
@@ -210,5 +211,9 @@ body {
   
   .hero-image img, .feature-image img {
     max-width: 340px;
+  }
+  
+  .feature-text p {
+    max-width: 100%; /* Mobile screens par dynamic responsiveness ke liye */
   }
 }
