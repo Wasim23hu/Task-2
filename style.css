@@ -129,11 +129,11 @@ body {
 
 /* Exact Original Length & Style (Green Circle Calibration) */
 .feature-text p {
-  font-size: 16px;         /* Size accurate kiya */
-  font-weight: 400;        /* Regular sleek style jo clear dikhe */
-  line-height: 1.5;        /* Balanced line gap */
-  color: #727272;          /* Soft grey shade matching the picture */
-  max-width: 320px;        /* Yeh width lagane se text length green pic jaisi squeeze ho jayegi */
+  font-size: 16px;         
+  font-weight: 400;        
+  line-height: 1.5;       
+  color: #727272;          
+  max-width: 320px;        
   margin: 0 auto;
 }
 
@@ -214,6 +214,6 @@ body {
   }
   
   .feature-text p {
-    max-width: 100%; /* Mobile screens par dynamic responsiveness ke liye */
+    max-width: 100%;
   }
 }
